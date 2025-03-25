@@ -20,3 +20,4 @@ devsrc
 docs/Makefile
 docs/make.bat
 dist
+venv/
