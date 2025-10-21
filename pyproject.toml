@@ -10,7 +10,7 @@ dependencies = [
     "yafowil.webob",
 ]
 
-[project.entry-points."console_scripts"]
+[project.scripts]
 helloworld = "helloworld.run:run"
 
 
