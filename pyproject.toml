@@ -13,5 +13,8 @@ dependencies = [
 [project.entry-points."console_scripts"]
 helloworld = "helloworld.run:run"
 
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/helloworld"]
 [tool.zest-releaser]
 create-wheel = true
