@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helloworld"
+version = "0.0.0"
+description = ""
+dependencies = [
+    "yafowil.webob",
+]
+
+[project.entry-points."console_scripts"]
+helloworld = "helloworld.run:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.zest-releaser]
+create-wheel = true
