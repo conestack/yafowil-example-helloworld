@@ -7,7 +7,7 @@ name = "helloworld"
 version = "0.0.0"
 description = ""
 dependencies = [
-    "yafowil.webob",
+    "yafowil.webob>1.99",
 ]
 
 [project.scripts]
