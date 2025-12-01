@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling", "hatch-fancy-pypi-readme"]
+build-backend = "hatchling.build"
+
+[project]
+name = "helloworld"
+version = "0.0.0"
+description = ""
+dynamic = ["readme"]
+requires-python = ">=3.10"
+dependencies = [
+    "yafowil.webob>1.99",
+]
+
+[project.scripts]
+helloworld = "helloworld.run:run"
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+fragments = [
+    {path = "README.md"}
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/helloworld"]
+
+[tool.zest-releaser]
+create-wheel = true
